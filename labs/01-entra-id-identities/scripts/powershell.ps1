@@ -1,10 +1,16 @@
 Connect-AzAccount
 
+# Criar usuário interno
 New-AzADUser `
-  -DisplayName "az104-nyc-user1" `
-  -UserPrincipalName "az104-nyc-user1@domain.onmicrosoft.com" `
+  -DisplayName "user-optimus-01" `
+  -UserPrincipalName "user-optimus-01@yourdomain.onmicrosoft.com" `
   -Password (ConvertTo-SecureString "TempPassword123!" -AsPlainText -Force)
 
+# Criar grupo
 New-AzADGroup `
-  -DisplayName "grp-nyc-it-admins" `
-  -MailNickname "nycitadmins"
+  -DisplayName "grp-avengers-01" `
+  -MailNickname "avengers01"
+
+# Adicionar membros
+Add-AzADGroupMember -TargetGroup "grp-avengers-01" -MemberId "user-optimus-01@yourdomain.onmicrosoft.com"
+Add-AzADGroupMember -TargetGroup "grp-avengers-01" -MemberId "guest-rey-01@external.com"

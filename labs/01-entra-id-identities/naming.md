@@ -1,27 +1,14 @@
-# 🏷️ Naming Convention
+# 🏷️ Naming Convention - Geek Edition
 
-## 🎯 Objetivo
+- Estrutura: `<tipo>-<tema>-<número>`  
+- Tipo: user / guest / grp / vm / rg  
+- Tema: personagens de universos geek (Transformers, Star Wars, Marvel, DC)  
+- Número sequencial para escalabilidade  
 
-Simular ambientes enterprise e garantir consistência.
+### Exemplos:
 
----
-
-## 🧱 Estrutura
-
-<resource-type>-<city>-<environment>-<number>
-
----
-
-## 📍 Exemplos
-
-* az104-nyc-user1
-* grp-nyc-it-admins
-* guest-miami-user
-
----
-
-## 🧠 Por que isso importa?
-
-* Facilita identificação
-* Ajuda automação
-* Evita erros operacionais
+- `user-optimus-01` (usuário interno)  
+- `guest-rey-01` (convidado)  
+- `grp-avengers-01` (grupo de admins)  
+- `vm-batman-01` (máquina virtual)  
+- `rg-spiderverse-01` (resource group)

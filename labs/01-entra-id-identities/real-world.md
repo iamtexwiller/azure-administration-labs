@@ -1,35 +1,11 @@
-# 🏢 Real-World Scenario
+# 🏢 Cenário de Empresa
 
-## 📍 Cenário
+- Empresa global com múltiplos times  
+- Necessidade de acesso escalável a recursos  
+- Uso de grupos para automatizar permissões  
+- Preparação para RBAC (próximo lab)
 
-Empresa com múltiplos times e ambientes.
+## Insight
 
----
-
-## 🚨 Problema
-
-Gerenciamento manual de acessos.
-
----
-
-## ✅ Solução
-
-* Criar grupos por função
-* Adicionar usuários aos grupos
-* Preparar para RBAC
-
----
-
-## 🎯 Resultado
-
-* Escalabilidade
-* Segurança
-* Governança
-
----
-
-## 🧠 Insight
-
-Identidade sozinha não resolve.
-
-👉 O valor real vem com RBAC (próximo lab)
+Identidade sem grupo é difícil de gerenciar.  
+O verdadeiro valor surge ao integrar RBAC.

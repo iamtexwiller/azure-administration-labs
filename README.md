@@ -1,129 +1,112 @@
-# ☁️ Azure AZ-104 Labs
+# ☁️ AZ-104 Labs - Geek Edition
 
-Repositório de estudos práticos para a certificação AZ-104, com foco em **entendimento real de ambientes cloud** — não apenas execução de tarefas.
+Repositório de estudos práticos para a certificação **AZ-104**, com foco em **entendimento real de ambientes Azure**, usando **naming divertido e memorável inspirado em personagens geek** (Transformers, Star Wars, Marvel e DC Comics).
 
----
 
 ## 🎯 Objetivo
 
 Este repositório foi criado para:
 
-* Consolidar conhecimentos em Azure
-* Ir além do "como fazer" e explicar o **porquê**
-* Simular cenários reais de empresas
-* Criar uma base sólida para evoluir para arquitetura (AZ-305)
+- Consolidar conhecimentos em Azure  
+- Explicar **o porquê**, não apenas o “como”  
+- Simular cenários reais de empresas  
+- Criar uma base sólida para evoluir para arquitetura (AZ-305)  
+- Tornar o aprendizado memorável usando **Naming Geek**
 
----
 
-## 🧠 Abordagem
+## 🏗️ Estrutura do Repositório
 
-Diferente de labs tradicionais, este projeto foca em:
 
-* ✅ Explicação conceitual (WHY, não só HOW)
-* ✅ Cenários reais de empresa
-* ✅ Erros comuns e como evitá-los
-* ✅ Naming convention profissional
-* ✅ Uso de scripts (Azure CLI e PowerShell)
-
----
-
-## 🏗️ Arquitetura base
-
-Todos os labs seguem o modelo de identidade e acesso do Azure com o Microsoft Entra ID:
-
-User → Group → Role → Subscription → Resource
-
----
-
-## 📂 Estrutura do repositório
-
-```
 labs/
 ├── 01-entra-id-identities/
 ├── 02-rbac-and-subscriptions/
-├── 03-resource-groups/
+├── 03-governance-azure-policy/
 └── ...
-```
 
-Cada lab contém:
+Cada lab possui:
 
-* README (visão geral)
-* Theory (conceitos)
-* Hands-on (execução)
-* Common errors
-* Real-world scenario
-* Scripts
+- README.md (visão geral)  
+- theory.md (conceitos)  
+- hands-on.md (execução prática)  
+- naming.md (convenção geek)  
+- common-errors.md  
+- real-world.md  
+- scripts/ (Azure CLI e PowerShell)  
+- assets/diagrams/ (diagramas)
 
----
 
-## 🧪 Labs disponíveis
+## 🌟 Naming Convention Geek
 
-| Lab | Tema                   | Status         |
-| --- | ---------------------- | -------------- |
-| 01  | Entra ID Identities    | ✅ Completed    |
-| 02  | RBAC and Subscriptions | 🚧 In progress |
+Estrutura: `<tipo>-<tema>-<número>`  
 
----
+| Tipo   | Tema         | Exemplo             |
+|--------|--------------|---------------------|
+| user   | Transformers | `user-optimus-01`   |
+| guest  | Star Wars    | `guest-rey-01`      |
+| grp    | Marvel       | `grp-avengers-01`   |
+| vm     | DC Comics    | `vm-batman-01`      |
+| rg     | Marvel/DC    | `rg-spiderverse-01` |
 
-## 🧱 Naming Convention
+💡 **Dica:** Use sequência numérica para escalabilidade e consistência.
 
-Todos os recursos seguem padrão baseado em cidades dos EUA:
 
-* Users: `az104-nyc-user1`
-* Groups: `grp-nyc-it-admins`
-* Resource Groups: `rg-dallas-dev-01`
+## 🧪 Labs Disponíveis
 
-📌 Objetivo:
-Simular ambientes enterprise multi-region e melhorar governança.
+| Lab | Tema | Status | Universo Geek |
+|-----|------|--------|---------------|
+| [01 - Entra ID Identities](labs/01-entra-id-identities/README.md) | Gestão de usuários e grupos | ✅ Completed | Transformers / Star Wars / Marvel |
+| [02 - RBAC & Subscriptions](labs/02-rbac-and-subscriptions/README.md) | Controle de acesso e subscriptions | 🚧 In progress | Transformers / Marvel / DC Comics |
+| [03 - Governance via Azure Policy](labs/03-governance-azure-policy/README.md) | Gestão de políticas e compliance | ⏳ Planned | Marvel / DC Comics |
 
----
+> Cada link leva ao README.md específico do lab.
 
-## 🏢 Cenário simulado
 
-Os labs representam uma empresa que:
+## 🏢 Cenário Simulado
 
-* Possui múltiplos ambientes (Dev, Test, Prod)
-* Trabalha com times distribuídos
-* Precisa de controle de acesso escalável
-* Utiliza boas práticas de governança cloud
+- Empresa global com múltiplos times  
+- Necessidade de acesso escalável a recursos  
+- Uso de grupos para automatizar permissões  
+- Preparação para RBAC, Resource Groups, Azure Policy e governança  
 
----
+> Naming Geek ajuda a diferenciar ambientes e tornar o aprendizado mais memorável.
 
-## 🚀 Próximos passos
 
-* Implementar RBAC (Lab 02)
-* Gerenciar Resource Groups
-* Deploy de Virtual Machines
-* Networking no Azure
+## ⚠️ Common Mistakes
 
----
+- Atribuir roles diretamente aos usuários  
+- Não usar grupos para acesso  
+- Naming inconsistente  
+- Não documentar a convenção para o time  
 
-## 🔮 Roadmap futuro
 
-* AZ-305 (Azure Architect)
-* Integração com boas práticas de arquitetura
-* Expansão para automação e infraestrutura como código
+## 🚀 Próximos Passos
 
----
+- Lab 02: RBAC & Subscriptions  
+- Lab 03: Governance via Azure Policy  
+- Integração com Azure Networking e Storage  
 
-## ⭐ Diferencial deste repositório
 
-Este projeto não é apenas sobre passar na certificação.
+## 🔮 Roadmap Futuro
 
-É sobre aprender a pensar como um:
+- AZ-305 (Azure Architect)  
+- Automação com PowerShell e CLI  
+- Infraestrutura como Código (IaC)  
+- Expansão para cenários multi-tenant  
 
-* Cloud Engineer
-* Azure Administrator
-* Futuro Cloud Architect
 
----
+## ⭐ Diferencial deste Repositório
+
+- Aprender a pensar como **Cloud Engineer / Azure Administrator**  
+- Entender o **porquê** das decisões, não apenas executar comandos  
+- Labs divertidos e memoráveis com Naming Geek  
+- Estrutura profissional e escalável para evoluir para arquitetura  
+
 
 ## 📬 Contribuição
 
-Sinta-se à vontade para sugerir melhorias ou abrir issues.
+Sinta-se à vontade para abrir **issues**, sugerir melhorias ou enviar **pull requests**.
 
----
 
 ## 📌 Autor
 
-Desenvolvido como parte da jornada de especialização em Cloud Computing.
+Desenvolvido como parte da jornada de especialização em **Cloud Computing e Azure**.

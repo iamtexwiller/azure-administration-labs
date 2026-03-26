@@ -1,44 +1,23 @@
 # 🧠 Teoria - Microsoft Entra ID
 
-O Microsoft Entra ID é o serviço de identidade e acesso da Microsoft na nuvem.
+## O que é Microsoft Entra ID?
 
-## 🔐 O que é uma identidade?
+Serviço de identidade e acesso da Microsoft na nuvem.
 
-Uma identidade representa um usuário ou sistema que pode autenticar no Azure.
-
-Exemplos:
-
-* Usuários internos (funcionários)
-* Usuários externos (parceiros - B2B)
+- **Usuários internos**: funcionários (ex: `user-optimus-01`)  
+- **Usuários externos**: convidados B2B (ex: `guest-rey-01`)
 
 ---
 
-## 👥 Por que grupos são essenciais?
+## Por que grupos são essenciais?
 
-Sem grupos:
-
-* Permissões atribuídas manualmente
-* Não escala
-
-Com grupos:
-
-* Permissões atribuídas uma única vez
-* Usuários herdam acesso automaticamente
+- Evitam atribuição manual de permissões  
+- Garantem escalabilidade e governança  
+- Facilitam auditoria e compliance
 
 ---
 
-## 🔗 Conexão com RBAC
+## Fluxo de permissões
 
-RBAC define permissões no Azure.
-
-Fluxo correto:
+```text
 User → Group → Role → Subscription → Resource
-
----
-
-## 🧠 Identity vs Resource Plane
-
-* Identity Plane → autenticação
-* Resource Plane → autorização
-
-👉 Este lab cobre apenas Identity Plane.

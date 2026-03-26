@@ -1,17 +1,6 @@
-# ❌ Common Errors
+# ❌ Erros comuns
 
-## 1. Permissão direta no usuário
-
-Não escala e dificulta auditoria
-
----
-
-## 2. Naming inconsistente
-
-Ex: user1, teste123
-
----
-
-## 3. Não usar B2B
-
-Criar contas internas para externos
+1. Permissões atribuídas diretamente ao usuário  
+2. Não usar grupos para acesso  
+3. Naming inconsistente  
+4. Não documentar convenção para o time

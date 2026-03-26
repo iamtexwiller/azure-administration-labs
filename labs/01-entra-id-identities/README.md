@@ -1,82 +1,87 @@
-# 🔐 Lab 01 - Manage Microsoft Entra ID Identities
+# 🔐 Lab 01 - Manage Microsoft Entra ID Identities (Geek Edition)
 
-## 🎯 Objective
-
-Entender como identidades funcionam no Azure e por que grupos são fundamentais para escalabilidade e segurança.
+## 🎯 Objetivo
+Aprender a gerenciar identidades no Microsoft Entra ID com usuários, grupos e convidados, aplicando **naming profissional e divertido**, simulando ambientes corporativos.
 
 ---
 
 ## 🏗️ Architecture Overview
 
-Este diagrama representa o modelo completo de identidade e acesso no Azure usando o Microsoft Entra ID.
+Este diagrama mostra o fluxo de identidade no Azure usando Microsoft Entra ID:
 
-> ⚠️ **Este lab foca apenas na camada de identidade (Identity Plane)**
+- Users → Groups → Roles → Subscription → Resources  
+
+> ⚠️ Neste lab, implementaremos apenas Users e Groups.
 
 ![Architecture Diagram](../../assets/diagrams/entra-id-architecture.png)
 
 ---
 
-## 🧠 How to read this diagram
+## 🧠 Como ler o diagrama
 
-1. Usuários são criados no Microsoft Entra ID
-2. Usuários são adicionados a grupos
-3. Grupos recebem permissões (RBAC)
-4. Permissões são aplicadas na subscription
-5. Acesso é concedido aos recursos
+1. Usuários criados no Microsoft Entra ID  
+2. Usuários adicionados a grupos  
+3. Grupos recebem permissões (RBAC)  
+4. Roles aplicadas na Subscription  
+5. Acesso concedido aos recursos  
 
-👉 Neste lab, você implementa apenas:
-
-* Step 1 (Users)
-* Step 2 (Groups)
+> Neste lab implementamos apenas steps 1 e 2.
 
 ---
 
-## 🧠 What you will learn
+## 📂 Estrutura do lab
 
-* Criar usuários no Microsoft Entra ID
-* Diferença entre usuários internos e externos (B2B)
-* Criar grupos e gerenciar membros
-* Importância de naming convention
-* Base para RBAC
-
----
-
-## 🏢 Real-world context
-
-Uma empresa está criando um ambiente de pré-produção para testes. Engenheiros precisam de acesso controlado aos recursos.
+- **Teoria**: conceitos de identidade, grupos, B2B  
+- **Hands-on**: criação de usuários, convidados e grupos  
+- **Naming**: convenção geek  
+- **Common errors**: erros típicos  
+- **Real-world**: contexto de empresa  
+- **Scripts**: CLI e PowerShell
 
 ---
 
-## 🧱 Naming Convention
+## 🌟 Naming Convention (Geek Edition)
 
-Este lab utiliza cidades dos EUA para simular ambientes reais:
+Estrutura: `<tipo>-<tema>-<número>`
 
-* Users: az104-nyc-user1
-* Groups: grp-nyc-it-admins
-* Guests: guest-miami-user
+| Tipo   | Tema         | Exemplo             |
+|--------|--------------|---------------------|
+| user   | Transformers | `user-optimus-01`   |
+| guest  | Star Wars    | `guest-rey-01`      |
+| grp    | Marvel       | `grp-avengers-01`   |
+| vm     | DC Comics    | `vm-batman-01`      |
+| rg     | Marvel/DC    | `rg-spiderverse-01` |
 
----
-
-## ⚠️ Common mistakes
-
-* Atribuir permissões direto ao usuário
-* Não usar grupos
-* Naming inconsistente
+> Mantém consistência e permite expansão de labs.
 
 ---
 
-## ⏭️ Next Steps
+## 🧪 Labs deste repositório
 
-Nos próximos labs você irá trabalhar com:
-
-* RBAC (Role Assignments)
-* Azure Subscriptions
-* Resource Groups e VMs
+| Lab | Tema | Status |
+|-----|------|--------|
+| 01 | Entra ID Identities | ✅ Completed |
+| 02 | RBAC and Subscriptions | 🚧 In progress |
 
 ---
 
-## 🔗 Related Concepts
+## 🏢 Cenário de empresa
 
-* Microsoft Entra ID
-* RBAC (Role-Based Access Control)
-* Identity vs Resource Plane
+- Times distribuídos  
+- Necessidade de controle de acesso escalável  
+- Uso de grupos para automação de permissões  
+
+---
+
+## ⚠️ Common Mistakes
+
+- Atribuir roles diretamente aos usuários  
+- Não usar grupos  
+- Naming inconsistente  
+
+---
+
+## 🚀 Próximos passos
+
+- Lab 02: RBAC e Subscriptions  
+- Lab 03: Governance via Azure Policy
