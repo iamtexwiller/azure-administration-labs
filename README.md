@@ -16,12 +16,14 @@ Este repositório foi criado para:
 
 ## 🏗️ Estrutura do Repositório
 
-
+```text
 labs/
 ├── 01-entra-id-identities/
 ├── 02-rbac-and-subscriptions/
 ├── 03-governance-azure-policy/
 └── ...
+```
+
 
 Cada lab possui:
 
